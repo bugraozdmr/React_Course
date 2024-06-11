@@ -41,3 +41,7 @@
   color: #888;
 }
 */
+
+.image.is-4by3 img {
+  height: 70%;
+}
