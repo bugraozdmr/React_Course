@@ -1,0 +1,84 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-create{
+    width: 50%;
+}
+
+.task-update{
+    width: 100%;
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.task-label{
+    margin: 10px 0;
+}
+
+.task-input{
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btn-sub{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.btn-hero{
+    background-color: blueviolet;
+}
+
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-show{
+    border: 1px solid green;
+    border-radius: 30px;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.task-title{
+    margin-bottom: 5px;
+}
+
+.btn-dlt{
+    border-radius: 20px;
+    padding: 12px;
+    width: 60px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border: none;
+    margin-right: 10px;
+}
+
+.btn-upd{
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 12px;
+    width: 80px;
+    font-size: 14px;
+    border-radius: 20px;
+}
