@@ -10,7 +10,7 @@ const searchImages = async (term) => {
         query:term
       }
     })
-    debugger;
+    //debugger;
     // dönen içinden gerekli olanı çekme
     return response.data.results;
   }

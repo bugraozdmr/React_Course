@@ -1,12 +1,20 @@
 import "bulma/css/bulma.css";
+import { useState } from "react";
 
 function SearchHeader({search}){
+    const [value,setValue] = useState('');
+
     const handleFormSubmit = (event) => {
         event.preventDefault();
         //debugger;
         // atama yapıyor
-        search('can');
+        search(value);
     }
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    }
+
     return (
       <>
         <form onSubmit={handleFormSubmit}>
@@ -14,7 +22,8 @@ function SearchHeader({search}){
           <input
             className="input is-success mt-2 px-2"
             type="text"
-            placeholder="Success input"
+            placeholder="Feel free"
+            onChange={handleChange}
           />
         </form>
       </>
