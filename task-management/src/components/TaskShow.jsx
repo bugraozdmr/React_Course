@@ -1,13 +1,19 @@
 import { useState } from "react";
 import TaskCreate from "./TaskCreate";
 
+import { useContext } from 'react'
+import TasksContext from '../context/task';
 
-function TaskShow({task,onDelete,onUpdate}){
+function TaskShow({task}){
+    const {editTaskById,DeleteTaskById} = useContext(TasksContext)
+
     const [showEdit,setshowEdit] = useState(false);
 
     const handleDeleteClick = () => {
         // bir üst elemente aktarım
-        onDelete(task.id);
+        //onDelete(task.id);
+
+        DeleteTaskById(task.id);
     }
 
     const handleEditClick = () => {
@@ -17,7 +23,9 @@ function TaskShow({task,onDelete,onUpdate}){
     // onUpdate'e 3 parametre geliyor taskCreate'den
     const HandleSubmit = (id,updatedTitle,updatedDesc) => {
         setshowEdit(false);
-        onUpdate(id,updatedTitle,updatedDesc);
+        //onUpdate(id,updatedTitle,updatedDesc);
+
+        editTaskById(id,updatedTitle,updatedDesc)
     }
     
     
@@ -26,6 +34,7 @@ function TaskShow({task,onDelete,onUpdate}){
       <div className="task-show">
         {showEdit ? (
             // bunun için yer hazılanmıştı zaten :D
+            // bu update sonrası kapat o kısmı der onUpdate şart -- ondan sonra edit ediyor zaten
           <TaskCreate task={task} taskFormUpdate={true} onUpdate={HandleSubmit}/>
         ) : (
           <div>

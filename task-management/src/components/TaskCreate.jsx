@@ -1,7 +1,12 @@
 import { useState } from "react";
 
+import { useContext } from 'react'
+import TasksContext from '../context/task';
 
-function TaskCreate ({onCreate,task,taskFormUpdate,onUpdate}){
+
+function TaskCreate ({task,taskFormUpdate,onUpdate}){
+    const {editTaskById,createTask} = useContext(TasksContext)
+
     const [title,setTitle] = useState(task ? task.title : '')
     const [taskDesc,setTaskDesc] = useState(task ? task.taskDesc : '')
 
@@ -19,9 +24,12 @@ function TaskCreate ({onCreate,task,taskFormUpdate,onUpdate}){
         if(taskFormUpdate){
             // bilgi taşıma yukarılara
             onUpdate(task.id,title,taskDesc);
+            // zaten taskShowda gidiyor bilgiler
+            //editTaskById(task.id,title,taskDesc);
         }
         else{
-            onCreate(title,taskDesc);
+            //onCreate(title,taskDesc);
+            createTask(title,taskDesc);
         }
 
         
