@@ -1,0 +1,40 @@
+.courseMainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    border: 2px solid violet;
+    border-radius: 27px;
+    padding: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardPrice{
+    font-style: italic;
+    color: red;
+}
+
+.cardDeleteBtn{
+    color: wheat;
+    width: 100px;
+    background-color: rgb(135, 48, 48);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.refresh{
+    text-align: center;
+}
