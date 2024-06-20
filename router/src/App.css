@@ -1,0 +1,16 @@
+
+.MainNav {
+  background-color: blueviolet;
+  padding: 15px 30px;
+}
+
+.MainNav a{
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+.MainNav a.active{
+  font-size: 1.4rem;
+  color : orange
+}
