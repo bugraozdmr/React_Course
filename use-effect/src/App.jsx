@@ -38,7 +38,7 @@ function App() {
         >
           Grant ++
         </button>
-        <span>Grant : {grant}</span>
+        <span>Grant :    {grant}</span>
       </div>
 
       <div>
