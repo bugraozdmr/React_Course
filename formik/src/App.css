@@ -1,0 +1,81 @@
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form{
+  width: 500px;
+}
+
+.inputDiv{
+  margin-bottom: 10px;
+}
+
+.inputDiv label{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,select{
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  color: white;
+  margin: 5px 0;
+  outline: none;
+  border-radius: 10px;
+}
+
+.inputDiv input::placeholder{
+  color: lightgray;
+}
+
+input:focus{
+  border-color: lightblue;
+}
+
+.btnHero{
+  width: 100%;
+  padding: 8px 8px;
+  margin: 16px 0;
+  border-radius: 9px;
+  color: white;
+  background-color: green;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.inputDiv input.input-error {
+  border-color: #fc8181;
+}
+
+
+.error{
+  color: #fc8181;
+  font-size: 12px;
+  text-align: left;
+}
+
+.checkboxDiv{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkboxDiv input{
+  width: auto;
+  margin-right: 2px;
+}
+
+.formLink{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
