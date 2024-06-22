@@ -1,0 +1,38 @@
+.inputArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; 
+  width: 40%;
+}
+
+.inputArea input {
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.inputArea button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  color: white;
+  background-color: #4CAF50;
+}
+
+.itemsDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoItem{
+  margin: 5px 10px;
+  width: 30%;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+}
