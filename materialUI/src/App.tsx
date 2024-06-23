@@ -18,6 +18,15 @@ import { LessonAppBar } from './components/LessonAppBar'
 import { LessonImageList } from './components/LessonImageList'
 import { LessonPaper } from './components/LessonPaper'
 import { LessonLink } from './components/LessonLink'
+import { LessonBreadCrumps } from './components/LessonBreadCrumps'
+import { LessonDrawer } from './components/LessonDrawer'
+import { LessonBadge } from './components/LessonBadge'
+import { LessonSpeedDial } from './components/LessonSpeedDial'
+import { LessonBottomNavigation } from './components/LessonBottomNavigation'
+import { LessonAvatar } from './components/LessonAvatar'
+import { LessonList } from './components/LessonList'
+import { LessonTooltip } from './components/LessonTooltip'
+import { LessonAlert } from './components/LessonAlert'
 
 function App() {
   return (
@@ -40,7 +49,16 @@ function App() {
       {/* <LessonAppBar /> */}
       {/* <LessonImageList /> */}
       {/* <LessonPaper /> */}
-      <LessonLink />
+      {/* <LessonLink /> */}
+      {/* <LessonBreadCrumps /> */}
+      {/* <LessonDrawer /> */}
+      {/* <LessonBadge /> */}
+      {/* <LessonSpeedDial /> */}
+      {/* <LessonBottomNavigation /> */}
+      {/* <LessonAvatar /> */}
+      {/* <LessonList /> */}
+      {/* <LessonTooltip /> */}
+      <LessonAlert />
     </div>
   )
 }
