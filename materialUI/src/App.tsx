@@ -27,10 +27,35 @@ import { LessonAvatar } from './components/LessonAvatar'
 import { LessonList } from './components/LessonList'
 import { LessonTooltip } from './components/LessonTooltip'
 import { LessonAlert } from './components/LessonAlert'
+import { LessonDialog } from './components/LessonDialog'
+import { LessonSnackbar } from './components/LessonSnackbar'
+import { LessonProgress } from './components/LessonProgress'
+import { LessonSkeleton } from './components/LessonSkeleton'
+import { LessonLoadingButton } from './components/LessonLoadingButton'
+import { LessonTable } from './components/LessonTable'
+import { LessonDatePicker } from './components/LessonDatePicker'
+import { LessonDatePicker2 } from './components/LessonDatePicker2'
+import { LessonDateRange } from './components/LessonDateRange'
+import { LessonTabs } from './components/LessonTabs'
+import { LessonMasonry } from './components/LessonMasonry'
+import { LessonTimeline } from './components/LessonTimeline'
+import { LessonCustomizeTheme } from './components/LessonCustomizeTheme'
+
+import { colors,ThemeProvider, createTheme } from '@mui/material'
+
+const theme = createTheme({
+  palette:{
+    secondary:{
+      main: colors.brown[500],
+    },
+  },
+});
 
 function App() {
   return (
-    <div>
+    // son ders için customize etme
+    <ThemeProvider theme={theme}>
+      <div>
       {/* <LessonTypography /> */}
       {/* <LessonButton /> */}
       {/* <LessonButtonGroup /> */}
@@ -58,8 +83,23 @@ function App() {
       {/* <LessonAvatar /> */}
       {/* <LessonList /> */}
       {/* <LessonTooltip /> */}
-      <LessonAlert />
+      {/* <LessonAlert /> */}
+      
+      {/* <LessonDialog /> */}
+      {/* <LessonSnackbar /> */}
+      {/* <LessonProgress /> */}
+      {/* <LessonSkeleton /> */}
+      {/* <LessonLoadingButton /> */}
+      {/* <LessonTable /> */}
+      {/* <LessonDatePicker /> */}
+      {/* <LessonDatePicker2 /> */}
+      {/* <LessonDateRange /> */}
+      {/* <LessonTabs /> */}
+      {/* <LessonMasonry /> */}
+      {/* <LessonTimeline /> */}
+      <LessonCustomizeTheme />
     </div>
+    </ThemeProvider>
   )
 }
 
