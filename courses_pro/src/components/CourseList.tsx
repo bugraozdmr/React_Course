@@ -1,11 +1,15 @@
 import React from 'react'
-import { UseSelector, useSelector } from 'react-redux'
+import { UseSelector, useSelector,useDispatch } from 'react-redux'
 import { CourseItem } from './CourseItem';
 import { stateType } from '../control/cartSlice';
 import courseItems from '../CourseItems.js';
+import { Button, Grid } from '@mui/material';
+import {clearCart} from '../control/cartSlice.js';
+
 
 
 export const CourseList = () => {
+    const dispatch = useDispatch();
     const {quantity,cartItems,total} = useSelector((store) => store.cart);
   return (
     <>
@@ -19,21 +23,21 @@ export const CourseList = () => {
     ) : 
     (
         <section>
-            <header>
+            <header style={{textAlign:'center',marginBottom:'10px'}}>
                 <h2>Cart</h2>
             </header>
-            <div>
+            <Grid container spacing={4}>
                 {/* tum proplari aldi */}
-                {courseItems.map((item:stateType,index:number) => {
+                {cartItems.map((item:stateType,index:number) => {
                     return <CourseItem key={index} {...item} />
                 })}
-            </div>
-            <footer>
+            </Grid>
+            <footer style={{textAlign:'center',marginTop:'1.4rem'}}>
                 <hr />
                 <div>
                     <h4>Total: {total} TL</h4>
                 </div>
-                <button>Clear</button>
+                <Button color='error' variant='outlined' size='large' onClick={() => dispatch(clearCart())}>Clear</Button>
             </footer>
         </section>
     )}
