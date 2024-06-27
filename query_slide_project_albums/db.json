@@ -1,12 +1,78 @@
 {
-    "users":[
-        {
-            "id": 1,
-            "name": "John Doe"
-        },
-        {
-            "id": 2,
-            "name": "Jane Doe's Brother"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "ali@gmail.com"
+    },
+    {
+      "id": "cf71",
+      "name": "Ramiro Block",
+      "email": "Madyson.Pagac@gmail.com"
+    },
+    {
+      "id": "41a4",
+      "name": "Leroy Jones",
+      "email": "Marco85@hotmail.com"
+    },
+    {
+      "id": "f0ca",
+      "name": "Dr. Lora Carroll",
+      "email": "Theodore_Schmidt@yahoo.com"
+    },
+    {
+      "id": "f788",
+      "name": "Charlene Kertzmann",
+      "email": "Wallace_DuBuque@yahoo.com"
+    }
+  ],
+  "albums": [
+    {
+      "userid": 1,
+      "title": "Eskisehir",
+      "id": 12
+    },
+    {
+      "id": "091e",
+      "userid": "1",
+      "title": "Incredible Steel Sausages"
+    },
+    {
+      "id": "b444",
+      "userid": "1",
+      "title": "Incredible Concrete Shirt"
+    },
+    {
+      "id": "0423",
+      "userid": "1",
+      "title": "Oriental Metal Chair"
+    },
+    {
+      "id": "d42e",
+      "userid": "1",
+      "title": "Unbranded Frozen Pants"
+    }
+  ],
+  "photos": [
+    {
+      "id": "b314",
+      "albumid": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2831232792526848"
+    },
+    {
+      "id": "0a7b",
+      "albumid": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5711521464188928"
+    },
+    {
+      "id": "d3ba",
+      "albumid": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3019157939421184"
+    },
+    {
+      "id": "efbb",
+      "albumid": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=659345448632320"
+    }
+  ]
 }
