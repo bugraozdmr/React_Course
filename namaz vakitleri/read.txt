@@ -1,3 +1,6 @@
+# Proje için React ve typescript seçildi
+Read.txt oku daha detay için
+
 Tailwind Yüklemek : ( Using Vite )
 https://tailwindcss.com/docs/installation/using-vite
 
@@ -19,3 +22,6 @@ En son istediğin (app.css) içine ekle @import "tailwindcss";
 ## Burdaki .vscode settings'e bak prettier için önemli
 "editor.formatOnSave": true
 
+İstersen material tailwindde kullanılabilir 
+
+Farklı farklı UI'lar piyasada istediğini seç araştır ancak bir tane seçmen daha iyi olacaktır mesela farklı farklı ui'larda çakışma olursa çok büyük sorun olur sana
