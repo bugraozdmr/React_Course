@@ -5,6 +5,8 @@ import Menu from './components/Menu'
 import Contact from './components/Contact'
 import About from './components/About'
 import Navbar from './components/Navbar'
+//import { NavbarSimple } from './components/Navbar'
+
 import { Footer } from './components/Footer'
 
 function App() {

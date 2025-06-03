@@ -1,0 +1,21 @@
+Tailwind Yüklemek : ( Using Vite )
+https://tailwindcss.com/docs/installation/using-vite
+
+npm install tailwindcss @tailwindcss/vite
+Sonra vite.config.ts'e git ve 
+**
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+** gibi yap
+
+En son istediğin (app.css) içine ekle @import "tailwindcss";
+
+## Burdaki .vscode settings'e bak prettier için önemli
+"editor.formatOnSave": true
+

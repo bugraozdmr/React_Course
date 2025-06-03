@@ -1,0 +1,450 @@
+##### OKUMAYA ALTTAN BAŞLA
+
+faker.js rastgele isim resim generate eder
+
+2:05
+19. React Material UI
+139. Box
+mui'da xscss özellikleri verir.
+
+
+
+xs  hem masaüstü hemde mobil cihaz ayarı
+
+0:34
+17. React Typescript
+114. Props Geçerken Typescript Kullanımı
+rfce
+
+
+
+// rfce ' ile oluştu
+ 
+import React from 'react'
+ 
+function Home() {
+  return (
+    <div>Home</div>
+  )
+}
+ 
+export default Home
+6:29
+16. Typescript
+103. Abstract Class
+Abstract class newlenemez
+
+3:24
+16. Typescript
+99. Access Modifiers (Public Private Protected)
+protected kalıtım almış başka class erişebilir ancak diğerleri erişemez.
+
+4:09
+16. Typescript
+78. Data Annotation
+Type belirtme
+
+let age:number = 29;
+let firstname:string = 'Grant';
+let lastname:string = 'Wick';
+let isUpdated: boolean = true;
+ 
+ 
+function display(id:any,name:string){
+    console.log('Id :' + id + ', Name : '+ name);
+}
+ 
+display(age,firstname);
+4:57
+16. Typescript
+77. Typescript Ortamının Hazırlanması
+typescript ile yazılan dosya sonrasında
+
+
+
+watch eder app.ts değişince oto app.js'de değişir
+
+sudo tsc app.ts -w
+
+şeklinde convert edilmeli
+
+
+
+lite-server yüklenmeli
+
+sonra package.json'a 'eklenmeli SCRIPTS altında
+
+"start": "lite-server"
+
+
+
+npm init'i unutma
+
+0:23
+16. Typescript
+76. Typescript Nedir
+typeScript -- javaScript üzerinde kurulu programlama dili
+
+npm --version typescript
+
+4:30
+15. React Formik
+69. Proje Açılışı ve Gerekli Package Kurulumları
+form için formik
+
+npm install formik --save
+
+form validasyonları için yup
+
+npm i yup
+
+router için
+
+react-router-dom
+
+8:21
+13. React Router 6
+56. İç İçe Routelar
+<Route path='/history' element={<History />} >
+        {/* path için /team hata verir team olmalı */}
+          <Route path='company' element={<Company/>} />
+          <Route path='team' element={<Team />} />
+        </Route>
+2:30
+13. React Router 6
+52. React Router Kurulumu Componentlere Entegrasyonu
+sudo npm install react-router-dom
+
+1:32
+12. React Hooks
+49. Custom Hook
+rfc 'miş oluşturma fonksiyon
+
+6:36
+12. React Hooks
+47. UseTransition
+UseTransition -- tek bir render değil iki render alıyor -- önce biri sonra biri. -- Önemli
+
+
+
+O sırada yükleniyor felan kullanılabilir .. pending kısmı var
+
+
+
+UseDeferredValue yine transition gibi -- sıralama belirtir
+
+6:59
+12. React Hooks
+45. UseCallback
+useCallback --> bir fonksiyon döner geriye --
+
+useMemo --> anlamadım usta :D
+
+useRef --> sürekli render eder ancak sadece değişikli olursa belli bir değişkende - Component sürekli render olmuyor.
+
+
+
+Bir etiket ref'de olabilir. --- Bu şekilde ref edilmiş değerin value'su ile felan oynanabilir.
+
+0:44
+10. Kurslarım Projesi
+36. Kurs Datasının İçeriye Basılması ve Silme Aksiyonu
+context api -- asp'deki gibi bir nesne tüm metodları barındırıyor ve onu kullanıyoruz.
+
+21:41
+9. UseContext - Context API Mantığı
+33. Projeye Context API Entegrasyonu
+bunun için childeren olsa hata verir ha :D
+
+function Provider({children}){
+5:57
+8. UseEffect
+30. Json Server ve Axios Kurulumu
+sudo npm install json-server
+
+starting
+
+json-server --watch api/db.json
+
+
+
+Axios istek gönderen alan paket.
+
+16:02
+8. UseEffect
+29. UseEffect Kullanımı
+UseEffect
+
+useEffect(()=>{
+    console.log('component ilk kez render edildiğinde çalışır daha çalışmaz')
+  },[]);
+ 
+  useEffect(()=>{
+    console.log('Her zaman çalışır')
+  });
+ 
+ 
+  useEffect(()=>{
+    console.log('Her zamana çalışır + grant değerinde bir değişiklik olduğunda')
+  },[grant]);
+ 
+ 
+  useEffect(()=>{
+    console.log('Her zamana çalışır + polat değerinde bir değişiklik olduğunda')
+  },[polat]);
+ 
+  useEffect(()=>{
+    console.log('Her zamana çalışır + polat,grant değerinde bir değişiklik olduğunda')
+  },[polat,grant]);
+8:54
+7. Formlar
+26. Silme Aksiyonu
+alt childden yukarıları data taşıma önemli ve anlanmalı
+
+11:08
+7. Formlar
+23. Yeni Görev Ekleme
+Chillden Parenta param aktarımı
+const createTask = (title,Task) => {
+    console.log(title,Task);
+  }
+--
+
+<TaskCreate onCreate={createTask}/>
+--
+
+function TaskCreate ({onCreate}){
+,
+
+const handleSubmit = (event) => {
+        event.preventDefault();
+        onCreate(title,task);
+    }
+9:15
+6. Api' ye İstek Atma ve Dönen Cevabı Kullanma
+17. Axios Kurulumu Ve Unspash'a İstek Atma
+application ID
+
+621829
+
+Access Key
+
+-y1vtXb2eN-2q1QkqIC1qLhOQ3D3cGFGK2Kr-yPZtqM
+
+Secret key
+
+ZwL4z7r-HPQ1mAX_ANqaB8Mc73uWYGg5_Sfj4yV_Kws
+
+7:36
+6. Api' ye İstek Atma ve Dönen Cevabı Kullanma
+17. Axios Kurulumu Ve Unspash'a İstek Atma
+koda debugger  gömülürse breakpoint gibi çalışır
+
+14:05
+5. State Mantığı
+15. Css Eklemeleri
+Alta atma
+
+<div className="columns is-multiline">{courseList}</div>
+
+
+---
+
+
+
+ <div className='column is-one-quarter'>
+        <img src={courseMap[courseName]}></img>
+    </div>
+8:00
+4. UseState
+11. UseState Kullanımı
+Fonksiyon içine asla () ekleme bozulur const func()
+
+let [value, setValue] = useState(1)
+ 
+  const handleClick = () => {
+    console.log({value});
+    value += 1;
+  }
+ 
+  return (
+    <>
+      <button onClick={handleClick}>Kurs Ekle</button>
+      <div>Kurs Sayısı : {value}</div>
+    </>
+  )
+ancak fonksiyon bu ise
+
+function getRandomCourse() {
+  {/* rastgele döndürür */}
+  const courseArray = ['Angular','Bootstrap','CSharp','KompleWeb'];
+  return courseArray[Math.floor(Math.random()*courseArray.length)];
+}
+olur
+
+5:36
+4. UseState
+11. UseState Kullanımı
+Başlangıç değeri ata sonrasında bir işlem sonucu o değerin asıl değeri değişir
+
+const [value, setValue] = useState(1)
+setValue state içinde yanındaki değeri değer ata+=rken kullanır
+
+
+
+setValue(value+1)
+
+gibi
+
+14:06
+3. Component Mantığı
+10. Css Kısmı
+Bulma css'ini ezmek için bulunan app.css ya da neyse orda gerekli css yazılmalı o class için
+1:00
+3. Component Mantığı
+10. Css Kısmı
+css kütüphanesi bulma
+
+
+
+npm install bulma
+
+1:02
+3. Component Mantığı
+8. React Developer Tools
+React Developer Tools
+
+https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?pli=1
+
+10:00
+3. Component Mantığı
+7. Props Kullanımı
+PROPS TANIMI
+
+/*
+    const title = props.title;
+    const description = props.description;
+    */
+ 
+    // modern way
+    const {title,description} = props;
+ 
+    // daha iyisi ({title,description}) => ... yap
+3:04
+3. Component Mantığı
+7. Props Kullanımı
+main.jsx altında
+
+<React.StrictMode>
+    <App />
+  </React.StrictMode>,
+iki kere basmayı önlemek için
+
+StrictMode
+silinir
+
+
+
+ya da toplu sil sadece
+
+<App />
+
+
+kalır
+
+2:05
+3. Component Mantığı
+7. Props Kullanımı
+props
+
+atanan değerler işte
+
+4:24
+3. Component Mantığı
+6. Tekrar Tekrar Kullanılabilen Component Mantığı Snippetlar
+Sorunsuz  COMPONENT
+
+export const Course = () => {
+  return (
+    <div>Hello Everyone</div>
+  )
+}
+seslerken {Course}
+
+ya da FUNCTION
+
+function Course(){
+    return <div>Sea</div>;
+}
+ 
+export default Course;
+seslerken sadece Course
+
+2:28
+3. Component Mantığı
+6. Tekrar Tekrar Kullanılabilen Component Mantığı Snippetlar
+rafc
+
+yeni açılan dosyada yazılırsa react Component hızlıca oluşur
+
+
+
+ffc
+
+bu ise function oluşturur hızlı
+
+
+
+Bunları kullanabilmek için es7+ ... yüklü olmalı
+
+1:47
+2. React Js'e Giriş
+4. Jsx Nedir ? Jsx Yazım Kuralları
+jsx kullanmak js kullanmaktan daha flex'dir .
+
+
+
+return( içersii )
+
+
+
+içeriye
+
+<></>
+
+atmak ya da
+
+<div></div>
+
+atmak sana kalmış
+
+4:00
+2. React Js'e Giriş
+3. React Nedir ? React Projesi Açılışı
+Eğer react kullanılsaydı
+
+npx create-react-app first_project
+
+
+
+Bu yöntemde public içinde index.js olur orda app oluşturulur
+
+src içindede app kullanılır
+
+3:03
+2. React Js'e Giriş
+2. 16 Mart 2023 React.Dev Güncellemesi, Create-React-App Yerine Vite Kullanılması
+Vite kurulum
+
+npm create vite@latest
+
+gerisini açıklıyor
+
+
+ÖNERMLİ
+
+sudo chmod -R 777 src
+
+-R recursive
+
+Altındaki tüm dosylara tam yetki verecektir.Bu olmadan olmuyor.
